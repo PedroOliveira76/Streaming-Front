@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(19, 19, 19);
+}
+
+main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.titleMax{
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+    user-select: none;
+    cursor: pointer;
+    transition: transform .2s;
+    padding: 0 3rem;
+}
+
+.title:hover {
+    transform: scale(1.2);
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+
+.content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-h1 {
+    width: 100%;
+    height: 15%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profileList {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+}
+
+.profileList>li {
+    width: 16%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+li>p {
+    color: rgb(112, 111, 111);
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.profileImg{
+    width: 140px;
+    height: 133px;
+    border-radius: 0.5rem;
+    transition: transform .6s;
+    cursor: pointer;
+}
+
+
+
+.profileList>li>img:hover {
+    transform: scale(0.9);
+}
+
+.btn{
+    border: 2px solid #616060;
+    background-color: transparent;
+    color: #616060;
+    width: 20%;
+    height: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    transition: 1s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid white;
+    color: white;
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .profileList {
+        width: 100%;
+    }
+
+    .profileList>li {
+        width: 14%;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .profileList {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .profileList>li {
+        width: 20%;
+    }
+
+    .btn{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profileList {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .profileList>li {
+        margin-top: 10px;
+        width: 170px;
+    }
+
+    .profileList>li>img {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    .btn {
+        width: 40%;
+    }
+
+
+}
+
+@media screen and (max-width: 630px) {
+    .profileList {
+        justify-content: center;
+        width: 90%;
+    }
+
+    .profileList>li>img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profileList>li {
+        margin-top: 15px;
+        width: 110px;
+    }
+
+    .container-h1 {
+       align-items: center;
+       width: 100px;
+    }
+
+    .btn{
+        width: 60%;
+    }
+}
+

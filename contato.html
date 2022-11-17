@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="shortcut icon" href="img/fav3.png" type="image/x-icon">
+    <title>MAXFLIX</title>
+</head>
+<body onload="msg()">
+    <header>
+        <nav>
+            
+            <div class='container-logo' onclick="home()">MAXFLIX</div>
+            <div class="container-items">
+                <div class="container-login"><a href="login.html">Login</a></div>
+                <div class="container-contac"><a href="index.html">Sing Up</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-form">
+            <form action="https://formsubmit.co/pedro.henriksantosp@gmail.com" method="POST" class="myForm">
+                <div class="form-title">
+                    <h1>Contato</h1>
+                </div>
+                <div class="container">
+                    <label for="name" class="label">Nome: </label>
+                    <input type="text" name="name" id="name" class="name" placeholder="Nome" required>
+                </div>  
+                <div class="container">
+                    <label for="email" class="label">Email: </label>
+                    <input type="email" name="email" id="email" class="email" placeholder="Email" required>
+                </div>  
+                <div class="container-textarea">
+                    <label for="msg" class="labeltxt">Mande-nos sua pergunta: </label>
+                    <textarea name="msg" id="msg" cols="50" rows="10" placeholder="Digite sua mensagem aqui!" class="msg" required></textarea>
+                </div>
+                <div class="btn-submit">
+                    <input type="submit" class="btn">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="img/fav3.png" type="image/x-icon">
+    <title>MAXFLiX</title>
+</head>
+<body onload="msg2()">
+    <header>
+        <nav>
+            <div class='container-logo' onclick="home()">MAXFLIX</div>
+            <div class="container-items">
+                <div class="container-login"><a href="index.html">Sign Up</a></div>
+                <div class="container-contac"><a href="contato.html">Contato</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec1" id="sec1">
+            <div class="container-form">
+                <div class="title-form">Login</div>
+                <form class="myForm">
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                    <label for="password"> Password:
+                        <input type="password" id="password" name="senha" required>
+                    </label>
+                    <div class="btn-submit">
+                        <input type="button" value="Enviar" id="btn" onclick="entrar()">
+                        <span>Não possui conta? <a href="index.html">Clique aqui!</a></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

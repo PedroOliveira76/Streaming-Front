@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family:'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(19, 19, 19);
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-logo{
+    user-select: none;
+    cursor: pointer;
+    transition: .2s;
+    padding: 0 3rem;
+}
+
+.container-logo>a{
+    text-decoration: none;
+    color: red;
+    font-size: 35px;
+}
+
+.container-logo:hover {
+    transform: scale(1.2);
+}
+
+.container-opcoes{
+    float: right;
+    margin-right: 20px;
+}
+
+.container-opcoes>li{
+    display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    transition: 0.2s;
+    font-size: 15px;
+    
+}
+
+.links:hover{
+    transform: scale(0.8);
+    color: red;
+}
+
+.sec1{
+    width: 97%;
+    height: 90%;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.titles{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.filmesSeries{
+    height: 270px;
+    display: flex;
+    overflow-x:auto;
+    padding: 10px;
+}
+
+.filmesSeries::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 1rem;
+
+}
+
+.filmesSeries::-webkit-scrollbar-thumb{
+    background-color: rgb(34, 34, 34);
+    border-radius: 1rem;
+}
+
+
+
+.filmesSeries .capaBombando{
+   width: 180px;
+   height: 250px;
+   margin-left: 20px;
+   text-align: center;
+   user-select: none;
+}
+
+
+.capaBombando>img{
+    width: 150px;
+    border-radius: 1rem;
+    height: 80%;
+    user-select: none;
+}
+
+
+.capaFilmeSerie{
+    width: 180px;
+    height: 250px;
+    margin-left: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+.capaFilmeSerie>img{
+    width: 150px;
+    border-radius: 1rem;
+    height: 80%;
+    user-select: none;
+}
+
+.title-filmes{
+    font-size: 15px;
+    user-select: none;
+}
+
+.title-filmes>a{
+    text-decoration: none;
+    color: rgb(0, 195, 255);
+    user-select: none;
+}
+
+.sec2{
+    width: 97%;
+    height: 90%;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+
+
+
+footer {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0, 0, 0);
+    color:#ffffff;
+    margin-top: 35px;
+    user-select: none;
+  }
+  
+  footer .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  footer .social > a:hover {
+    opacity:0.9;
+  }
+  
+  footer .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  
+
+
+#check {
+	display: none;
+}
+
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	.container-opcoes{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	.container-opcoes > li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	.links {
+		font-size: 20px;
+	}
+
+    #check:checked ~ .container-opcoes{
+        left: 0;
+    }
+}
