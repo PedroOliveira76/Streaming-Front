@@ -64,7 +64,7 @@ function cadastro() {
   console.log(user)
   fetch('http://localhost:3000/signUp', options)
     .then(res => {
-      if (res.status === 200) {
+      if (res.status === 201) {
         alert('Cadastrado realizado com sucesso')
       } else {
         console.log(res)
