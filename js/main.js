@@ -65,7 +65,7 @@ function cadastro() {
   fetch('http://localhost:3000/signIn', options)
     .then(res => {
       if (res.status === 200) {
-        alert('Cadastrado com sucesso')
+        alert('Cadastrado realizado com sucesso')
       } else {
         console.log(res)
       }
