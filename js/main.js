@@ -62,7 +62,7 @@ function cadastro() {
     body: JSON.stringify(user),
   };
   console.log(user)
-  fetch('http://localhost:3000/signIn', options)
+  fetch('http://localhost:3000/signUp', options)
     .then(res => {
       if (res.status === 200) {
         alert('Cadastrado realizado com sucesso')
